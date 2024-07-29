@@ -16,7 +16,7 @@ function Card({ dessert }) {
     }
   }, [dessert.amount]);
   return (
-    <div className="block rounded-lg  shadow-sm shadow-indigo-100 mb-7">
+    <div className="block rounded-lg   mb-7">
       <div className="relative mb-10">
         <img
           alt=""
@@ -56,18 +56,18 @@ function Card({ dessert }) {
       </div>
 
       <div className="mt-2">
-        <dl>
+        <div>
           <div>
-            <dt className="sr-only">Price</dt>
+            <p className="sr-only">Price</p>
 
-            <dd className="text-sm text-[#87635A]">{dessert.category}</dd>
+            <p className="text-sm text-[#87635A] mb-2">{dessert.category}</p>
           </div>
 
           <div>
             <dd className="font-medium ">{dessert.name}</dd>
             <p className="text-[#C73B0F]">${dessert.price.toFixed(2)}</p>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   );
